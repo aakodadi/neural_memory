@@ -1,0 +1,25 @@
+{
+  "name": "neural_memory",
+  "version": "0.0.1",
+  "description": "Bitwise neural network proof of concept",
+  "main": "neural_memory.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akodakim/neural_memory.git"
+  },
+  "keywords": [
+    "bitwise",
+    "neural",
+    "network",
+    "memory"
+  ],
+  "author": "Abdelhakim Akodadi <akodadi.abdelhakim@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akodakim/neural_memory/issues"
+  },
+  "homepage": "https://github.com/akodakim/neural_memory#readme"
+}
