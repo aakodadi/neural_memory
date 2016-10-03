@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/akodakim/neural_memory/issues"
   },
-  "homepage": "https://github.com/akodakim/neural_memory#readme"
+  "homepage": "https://github.com/akodakim/neural_memory#readme",
+  "devDependencies": {
+    "qunitjs": "^2.0.1"
+  }
 }
