@@ -74,4 +74,21 @@ Neural.prototype.input = function (inputs) {
 	this.fatherInput = inputs.father;
 }
 
+Neural.prototype.train = function (target) {
+	if (this.father !== undefined && this.mother !== undefined) {
+		// if it's a hidden neural retrieve inputs recurcevly from parents
+		this.fatherInput = this.father.output();
+		this.motherInput = this.mother.output();
+	}
+	if (this.fatherInput === false && this.motherInput === false) {
+		this.memory[0] = target;
+	} else if (this.fatherInput === false && this.motherInput === true) {
+		this.memory[1] = target;
+	} else if (this.fatherInput === true && this.motherInput === false) {
+		this.memory[2] = target;
+	} else if (this.fatherInput === true && this.motherInput === true) {
+		this.memory[3] = target;
+	}
+}
+
 module.exports = Neural;
