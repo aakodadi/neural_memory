@@ -1,9 +1,12 @@
 if (typeof QUnit == 'undefined')
     QUnit = require('qunit-cli');
 
-Neural = require('../neural');
+var Neural = require('../neural');
 
-//const neural = new Neural({father: null, mother: null});
-QUnit.test("hello test", function(assert) {
-  assert.ok(1 == "1", "Passed!");
+QUnit.module("Neural", function () {
+  QUnit.test("Untrained input neural test", function(assert) {
+    var neural = new Neural({father: null, mother: null});
+    neural.input({mother: false, father:false});
+    assert.equal(neural.output(), null, "Untrained neural must output null");
+  });
 });
