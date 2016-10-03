@@ -4,7 +4,7 @@
   "description": "Bitwise neural network proof of concept",
   "main": "neural_memory.js",
   "scripts": {
-    "test": "node test"
+    "test": "qunit-cli test/neural_test.js"
   },
   "repository": {
     "type": "git",
