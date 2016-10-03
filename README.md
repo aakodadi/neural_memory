@@ -1,2 +1,2 @@
-# neural_memory
-Bitwize neural network proof of concept
+# Neural Memory
+Bitwise neural network proof of concept
