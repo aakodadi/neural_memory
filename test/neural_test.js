@@ -1,7 +1,11 @@
-if (typeof QUnit == 'undefined')
-    QUnit = require('qunit-cli');
+if (typeof QUnit == 'undefined'){
+  QUnit = require('qunit-cli');
+}
 
-var Neural = require('../neural');
+if (typeof Neural == 'undefined'){
+  Neural = require('../neural');
+}
+
 
 QUnit.module("Neural", function () {
   QUnit.test("Untrained input neural test", function(assert) {
