@@ -43,10 +43,10 @@ Neural.prototype.output = function () {
 	} else if (this.fatherInput === true && this.motherInput === false) {
 		if (this.memory[2] !== null) {
 			return this.memory[2];
-		} else if (this.memory[0] !== null) {
-			return this.memory[0];
 		} else if (this.memory[3] !== null) {
 			return this.memory[3];
+		} else if (this.memory[0] !== null) {
+			return this.memory[0];
 		} else if (this.memory[1] !== null) {
 			return this.memory[1];
 		} else {

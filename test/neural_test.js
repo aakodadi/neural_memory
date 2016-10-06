@@ -41,9 +41,9 @@ QUnit.module("Neural", function () {
     neural.input({mother: false, father:false});
     assert.equal(neural.output(), false, "Trained neural for two values must output the value of the closest input trained for");
     neural.input({mother: false, father:true});
-    assert.equal(neural.output(), false, "Trained neural for two values must output the value of the closest input trained for");
-    neural.input({mother: true, father:false});
     assert.equal(neural.output(), true, "Trained neural for two values must output the value of the closest input trained for");
+    neural.input({mother: true, father:false});
+    assert.equal(neural.output(), false, "Trained neural for two values must output the value of the closest input trained for");
     neural.input({mother: true, father:true});
     assert.equal(neural.output(), true, "Trained neural for two values must output the value of the closest input trained for");
   });
