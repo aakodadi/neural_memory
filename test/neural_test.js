@@ -11,13 +11,13 @@ QUnit.module("Neural", function () {
   QUnit.test("Untrained input neural test", function(assert) {
     var neural = new Neural({father: null, mother: null});
     neural.input({mother: false, father:false});
-    assert.equal(neural.output(), null, "Untrained neural must allwase output null");
+    assert.equal(neural.output(), null, "Untrained neural must always output null");
     neural.input({mother: false, father:true});
-    assert.equal(neural.output(), null, "Untrained neural must allwase output null");
+    assert.equal(neural.output(), null, "Untrained neural must always output null");
     neural.input({mother: true, father:false});
-    assert.equal(neural.output(), null, "Untrained neural must allwase output null");
+    assert.equal(neural.output(), null, "Untrained neural must always output null");
     neural.input({mother: true, father:true});
-    assert.equal(neural.output(), null, "Untrained neural must allwase output null");
+    assert.equal(neural.output(), null, "Untrained neural must always output null");
   });
   QUnit.test("Trained input neural test for one value", function(assert) {
     var neural = new Neural({father: null, mother: null});
